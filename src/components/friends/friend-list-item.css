@@ -1,0 +1,39 @@
+.friend-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  margin-top: 20px;
+
+  border-radius: 10px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.friend-item:first-child {
+  margin-top: 0;
+}
+
+.online {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+  background-color: green;
+}
+
+.offline {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+
+  border-radius: 50%;
+  background-color: red;
+}
+
+.friend-name {
+  font-size: 25px;
+  margin-left: 20px;
+}

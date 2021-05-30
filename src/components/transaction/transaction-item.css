@@ -1,0 +1,9 @@
+.tr-item {
+  height: 60px;
+  color: grey;
+  background-color: white;
+}
+
+.tr-item:nth-child(2n) {
+  background-color: rgba(207, 205, 205, 0.6);
+}

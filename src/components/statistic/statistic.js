@@ -1,10 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
-import StatItem from "./statistic-item"
+import React from 'react';
+import PropTypes from 'prop-types';
+import StatItem from './statistic-item';
+import './statistic.css';
 
 const Statistics = ({ title, stats }) => (
   <section className="statistics">
-    {title && <h2 className="title">{title}</h2>}
+    {title && <h2 className="stat-title">{title}</h2>}
 
     <ul className="stat-list">
       {stats.map(({ id, label, percentage }) => (
@@ -17,23 +18,21 @@ const Statistics = ({ title, stats }) => (
       ))}
     </ul>
   </section>
-)
+);
 
 Statistics.propTypes = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
-    })
+    }),
   ).isRequired,
-}
+};
 
 function randomColor() {
-  return `rgb(${Math.round(
-    Math.random() * 255
-  )}, ${Math.round(Math.random() * 255)}, ${Math.round(
-    Math.random() * 255
-  )})`
+  return `rgb(${Math.round(Math.random() * 255)}, ${Math.round(
+    Math.random() * 255,
+  )}, ${Math.round(Math.random() * 255)})`;
 }
 
-export default Statistics
+export default Statistics;

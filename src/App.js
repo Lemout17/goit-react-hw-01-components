@@ -1,4 +1,6 @@
 import React from 'react';
+import 'modern-normalize/modern-normalize.css';
+import './main.css';
 import Profile from './components/profile/profile';
 import user from './data/user.json';
 import Statistics from './components/statistic/statistic';
