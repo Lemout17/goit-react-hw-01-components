@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './transaction-item.css';
+import styles from './transaction-item.module.css';
 
 const TransactionItem = ({ type, amount, currency }) => (
-  <tr className="tr-item">
+  <tr className={styles.item}>
     <td>{type}</td>
     <td>{amount}</td>
     <td>{currency}</td>

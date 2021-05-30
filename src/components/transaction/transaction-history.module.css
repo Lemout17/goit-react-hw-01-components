@@ -11,12 +11,12 @@ tbody {
   background-color: white;
 }
 
-.tr-title {
+.title {
   height: 60px;
 
   background-color: rgb(61, 179, 248);
 }
 
-.th-label {
+.label {
   color: white;
 }

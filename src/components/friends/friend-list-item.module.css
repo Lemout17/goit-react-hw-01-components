@@ -1,4 +1,4 @@
-.friend-item {
+.item {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -11,7 +11,7 @@
   background-color: #fff;
 }
 
-.friend-item:first-child {
+.item:first-child {
   margin-top: 0;
 }
 
@@ -33,7 +33,7 @@
   background-color: red;
 }
 
-.friend-name {
+.name {
   font-size: 25px;
   margin-left: 20px;
 }
